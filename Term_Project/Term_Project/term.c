@@ -62,8 +62,6 @@ void Remove_Stopword(FILE* fp_read, FILE* fp_write, FILE* fp_stopword)
 		BSTInsert(&rootNode, tempArray);
 	}
 	
-	//BSTShowAll(rootNode);
-
 	 //불용어 검색 후 제거하면서 바로바로 다시 저장.
 	while (fgets(tempArray, sizeof(tempArray), fp_read) != NULL)
 	{
